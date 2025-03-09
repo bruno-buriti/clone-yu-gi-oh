@@ -1,160 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clone Yu-Gi-Oh!</title>
-        <link rel="stylesheet" href="src/css/fonts.css">
-        <link rel="stylesheet" href="src/css/reset.css">
-        <link rel="stylesheet" href="src/css/styles.css">
-        <link rel="stylesheet" href="src/css/responsive.css">
-    </head>
-    <body>
-        <header class="cabecalho">
-            <h1 class="titulo">Clone Yu-Gi-Oh!</h1>
-        </header>
-        <main class="slider">
-            <button class="btn_seta btn_voltar" id="btn_voltar">
-                <img src="src/images/seta.png" alt="seta voltar">
-            </button>
-            <ul class="lista_personagens">
-                <li class="cartao fundo_1 selecionado">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Cosmos Sentinel, o Guardião Galáctico</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/font.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <header>
+            <span class="text-1">Inspirado em</span>
+            <span class="text-2">Yu-Gi-Oh!</span>
+    </header>
+    <main>
+        <button class="left buttons" id="left-button">
+            <img src="./src/images/misc/arrow-left.png" alt="seta para esquerda" class="left arrows">
+        </button>
+        <div class="deck">
+            <div class="card background-1 selected">
+                <div class="title">
+                    <h2 class="name">Cosmos Sentinel</h2>
+                    <span class="epithet">O Guardião Galáctico</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/01-cosmos-sentinel.png" alt="Cosmos Sentinel, o Guardião Galáctico" class="character" />
+                <div class="detail">
+                    <p class="description">Este imponente guerreiro cibernético é a personificação da harmonia entre tecnologia avançada e energia cósmica. Empunhando o Cetro Estelar, Cosmos Sentinel pode manipular o espaço-tempo, anulando ataques e fortalecendo aliados.</p>
+                    <div class="attributes">
+                        <span>ATK/ 2800</span>
+                        <span>DEF/ 2500</span>
                     </div>
-                    <img src="src/images/cosmos-sentinel.png" alt="Cosmos Sentinel, o Guardião Galáctico" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Este imponente guerreiro cibernético é a personificação da harmonia entre tecnologia avançada e energia cósmica. Empunhando o Cetro Estelar, Cosmos Sentinel pode manipular o espaço-tempo, anulando ataques e fortalecendo aliados.</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 2800 ]</span>
-                            <span>DEF [ 2500 ]</span>
-                        </div>
+                </div>
+            </div>
+            <div class="card background-2">
+                <div class="title">
+                    <h2 class="name">Nebula Dragon</h2>
+                    <span class="epithet">O Ser das Estrelas Eternas</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/02-nebula-dragon.png" alt="Nebula Dragon, o Ser das Estrelas Eternas" class="character" />
+                <div class="detail">
+                    <p class="description">Uma criatura mítica nascida da fusão de nebulosas e energia estelar. Com suas escamas cristalinas, Nebula Dragon canaliza o poder do cosmos, devastando seus inimigos com rajadas de energia pura. Diz-se que ele aparece apenas em momentos de caos universal, como arauto de renovação e equilíbrio celestial.</p>
+                    <div class="attributes">
+                        <span>ATK/ 3200</span>
+                        <span>DEF/ 2000</span>
                     </div>
-                </li>
-                <li class="cartao fundo_2">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Nebula Dragon, o Ser das Estrelas Eternas</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
+                </div>
+            </div>
+            <div class="card background-3">
+                <div class="title">
+                    <h2 class="name">Cyber Blade Paladin</h2>
+                    <span class="epithet">O Cavaleiro Digital</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/03-cyber-blade-paladin.png" alt="Cyber Blade Paladin, o Cavaleiro Digital" class="character" />
+                <div class="detail">
+                    <p class="description">Armado com a lendária Cyber Blade, este cavaleiro cibernético é um protetor das dimensões digitais. Com reflexos aprimorados e um senso de justiça inabalável, ele combate invasores que ameaçam o equilíbrio dos mundos virtuais e reais. Sua espada emana um brilho tecnológico que pode cortar tanto matéria física quanto código digital.</p>
+                    <div class="attributes">
+                        <span>ATK/ 2600</span>
+                        <span>DEF/ 2300</span>
                     </div>
-                    <img src="src/images/nebuladragon.png" alt="Nebula Dragon, o Ser das Estrelas Eternas" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Uma criatura mítica nascida da fusão de nebulosas e energia estelar. Com suas escamas cristalinas, Nebula Dragon canaliza o poder do cosmos, devastando seus inimigos com rajadas de energia pura. Diz-se que ele aparece apenas em momentos de caos universal, como arauto de renovação e equilíbrio celestial.</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 3200 ]</span>
-                            <span>DEF [ 2000 ]</span>
-                        </div>
+                </div>
+            </div>
+            <div class="card background-4">
+                <div class="title">
+                    <h2 class="name">Mecha Dragon X</h2>
+                    <span class="epithet">O Destruidor Biomecânico</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/04-mecha-dragon.png" alt="Mecha Dragon X, o Destruidor Biomecânico" class="character" />
+                <div class="detail">
+                    <p class="description">Uma fusão mortal de biologia dracônica e engenharia cibernética, Mecha Dragon X foi criado para ser uma arma definitiva. Com suas asas energizadas e múltiplos núcleos de poder, ele é capaz de disparar rajadas devastadoras e neutralizar até os mais fortes adversários. Sua presença no campo de batalha é um presságio de destruição iminente, conhecido como o "Fim das Eras".</p>
+                    <div class="attributes">
+                        <span>ATK/ 3500</span>
+                        <span>DEF/ 3000</span>
                     </div>
-                </li>
-                <li class="cartao fundo_3">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Cyber Blade Paladin, o Cavaleiro Digital</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
+                </div>
+            </div>
+            <div class="card background-5">
+                <div class="title">
+                    <h2 class="name">Archmage Stellarion</h2>
+                    <span class="epithet">O Guardião das Estrelas</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/05-archmage-stellarion.png" alt="Archmage Stellarion, o Guardião das Estrelas" class="character" />
+                <div class="detail">
+                    <p class="description">Um mago enigmático que manipula as forças do cosmos para proteger o equilíbrio universal. Archmage Stellarion utiliza seu Cetro Cósmico para canalizar feitiços de luz estelar, podendo banir inimigos para dimensões distantes ou fortalecer aliados com energia astral. Sua presença no campo de batalha é envolta em mistério e poder, sendo reverenciado como o "Sábio do Infinito".</p>
+                    <div class="attributes">
+                        <span>ATK/ 2400</span>
+                        <span>DEF/ 2600</span>
                     </div>
-                    <img src="src/images/cyberblade-paladin.png" alt="Cyber Blade Paladin, o Cavaleiro Digital" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Armado com a lendária Cyber Blade, este cavaleiro cibernético é um protetor das dimensões digitais. Com reflexos aprimorados e um senso de justiça inabalável, ele combate invasores que ameaçam o equilíbrio dos mundos virtuais e reais. Sua espada emana um brilho tecnológico que pode cortar tanto matéria física quanto código digital.</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 2600 ]</span>
-                            <span>DEF [ 2300 ]</span>
-                        </div>
+                </div>
+            </div>
+            <div class="card background-6">
+                <div class="title">
+                    <h2 class="name">Aegis Knight</h2>
+                    <span class="epithet">O Guardião do Firmamento</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/06-aegis-knight.png" alt="Aegis Knight, o Guardião do Firmamento" class="character" />
+                <div class="detail">
+                    <p class="description">Vestindo uma armadura forjada com fragmentos de estrelas, Aegis Knight é o defensor final das dimensões. Empunhando a Espada Astral e o Escudo Celestial, ele possui o poder de anular ataques inimigos e contra-atacar com golpes de pura energia cósmica. Seu juramento é proteger o equilíbrio entre luz e trevas, sendo lembrado como a "Fortaleza do Cosmos".</p>
+                    <div class="attributes">
+                        <span>ATK/ 3000</span>
+                        <span>DEF/ 2800</span>
                     </div>
-                </li>
-                <li class="cartao fundo_4">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Mecha Dragon X, o Destruidor Biomecânico</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
+                </div>
+            </div>
+            <div class="card background-7">
+                <div class="title">
+                    <h2 class="name">Storm Bringer Dragon</h2>
+                    <span class="epithet">O Arauto das Tempestades</span>
+                </div>
+                <div class="level">
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                    <img src="./src/images/misc/card-level.png" alt="estrela de nível" class="stars" />
+                </div>
+                <img src="./src/images/card-characters/07-storm-bringer-dragon.png" alt="Storm Bringer Dragon, o Arauto das Tempestades" class="character" />
+                <div class="detail">
+                    <p class="description">Este poderoso dragão domina os céus, invocando trovões e relâmpagos com o bater de suas asas. Stormbringer Dragon é a personificação da fúria da natureza, destruindo tudo em seu caminho com rajadas elétricas e ventos cortantes. Diz-se que sua aparição é o prelúdio de uma tempestade sem fim, trazendo destruição e renovação aos campos de batalha.</p>
+                    <div class="attributes">
+                        <span>ATK/ 2900</span>
+                        <span>DEF/ 2100</span>
                     </div>
-                    <img src="src/images/mechadragon.png" alt="Mecha Dragon X, o Destruidor Biomecânico" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Uma fusão mortal de biologia dracônica e engenharia cibernética, Mecha Dragon X foi criado para ser uma arma definitiva. Com suas asas energizadas e múltiplos núcleos de poder, ele é capaz de disparar rajadas devastadoras e neutralizar até os mais fortes adversários. Sua presença no campo de batalha é um presságio de destruição iminente, conhecido como o "Fim das Eras".</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 3500 ]</span>
-                            <span>DEF [ 3000 ]</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="cartao fundo_5">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Archmage Stellarion, o Guardião das Estrelas</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                    </div>
-                    <img src="src/images/archmage.png" alt="Archmage Stellarion, o Guardião das Estrelas" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Um mago enigmático que manipula as forças do cosmos para proteger o equilíbrio universal. Archmage Stellarion utiliza seu Cetro Cósmico para canalizar feitiços de luz estelar, podendo banir inimigos para dimensões distantes ou fortalecer aliados com energia astral. Sua presença no campo de batalha é envolta em mistério e poder, sendo reverenciado como o "Sábio do Infinito".</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 2400 ]</span>
-                            <span>DEF [ 2600 ]</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="cartao fundo_6">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Aegis Knight, o Guardião do Firmamento</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                    </div>
-                    <img src="src/images/aegis-knight.png" alt="Aegis Knight, o Guardião do Firmamento" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Vestindo uma armadura forjada com fragmentos de estrelas, Aegis Knight é o defensor final das dimensões. Empunhando a Espada Astral e o Escudo Celestial, ele possui o poder de anular ataques inimigos e contra-atacar com golpes de pura energia cósmica. Seu juramento é proteger o equilíbrio entre luz e trevas, sendo lembrado como a "Fortaleza do Cosmos".</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 3000 ]</span>
-                            <span>DEF [ 2800 ]</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="cartao fundo_7">
-                    <div class="carta_virada"></div>
-                    <h2 class="nome">Storm Bringer Dragon, o Arauto das Tempestades</h2>
-                    <div class="nivel_carta">
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                        <span class="estrela"></span>
-                    </div>
-                    <img src="src/images/stormbringer.png" alt="Storm Bringer Dragon, o Arauto das Tempestades" class="imagem_carta" />
-                    <div class="informacoes">
-                        <p class="descricao">Este poderoso dragão domina os céus, invocando trovões e relâmpagos com o bater de suas asas. Stormbringer Dragon é a personificação da fúria da natureza, destruindo tudo em seu caminho com rajadas elétricas e ventos cortantes. Diz-se que sua aparição é o prelúdio de uma tempestade sem fim, trazendo destruição e renovação aos campos de batalha.</p>
-                        <div class="informacoes_ataque">
-                            <span>ATK [ 2900 ]</span>
-                            <span>DEF [ 2100 ]</span>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <button class="btn_seta btn_avancar" id="btn_avancar">
-                <img src="src/images/seta.png" alt="seta avançar">
-            </button>
-        </main>
-        <script src="src/js/index.js"></script>
-    </body>
+                </div>
+            </div>
+        </div>
+        <button class="right buttons" id="right-button">
+            <img src="./src/images/misc/arrow-left.png" alt="seta para direita" class="right arrows">
+        </button>
+    </main>
+    <footer></footer>
+    <script src="./src/js/script.js"></script>
+</body>
 </html>

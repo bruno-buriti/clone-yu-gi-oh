@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Spectral-Light';
+    src: url(../fonts/spectral/Spectral-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Spectral-Medium';
+    src: url(../fonts/spectral/Spectral-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Spectral-Bold';
+    src: url(../fonts/spectral/Spectral-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Spectral-ExtraBold';
+    src: url(../fonts/spectral/Spectral-ExtraBold.ttf);
+}
+
+* {
+    font-family: 'Spectral-Medium', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(15px, 3vmin, 21px);
+}

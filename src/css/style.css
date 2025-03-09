@@ -1,0 +1,269 @@
+body {
+    background-image: url(../images/misc/website-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+
+body::-webkit-scrollbar-track{
+    background-color: #c08057;
+}
+
+header {
+    font-size: clamp(15px, 3vmin, 19px);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: #e4cfa5;
+    gap: clamp(2px, 0.8vh, 10px);
+}
+
+header .text-1 {
+    font-family: 'Spectral-ExtraBold';
+    font-size: 140%;
+    white-space: nowrap;
+}
+
+header .text-2 {
+    font-family: 'Spectral-ExtraBold';
+    font-size: 180%;
+    white-space: nowrap;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 82vh;
+    gap: clamp(16px, 6vw, 70px);
+}
+
+main .buttons {
+
+    background: radial-gradient(circle, #ecca8a, #daaf5f, #fdcc70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vmin;
+    height: 8vmin;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 60px;
+    max-height: 60px;
+    border-width: min(max(0.5vmin,2px),3px);
+    border-radius: 50%;
+    border-style: outset;
+    border-color: #e0cca6;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 2;
+}
+
+main .buttons .arrows {
+    width: 100%;
+    height: 100%;
+}
+
+main .buttons .right.arrows {
+    transform: rotate(180deg);
+}
+
+main .deck {
+    background-color: #5e5ed8;
+    width: 45vmin;
+    height: 81vmin;
+    min-width: 230px;
+    min-height: 414px;
+    max-width: 320px;
+    max-height: 576px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0);
+}
+
+main .deck .selected.card {
+    opacity: 1;
+    z-index: 1;
+}
+
+main .deck .card {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+}
+
+main .deck .card .title {
+    width: 100%;
+    min-height: max-content;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: clamp(15px, 3vmin, 19px);
+    padding: 4px;
+    gap: 4px;
+}
+
+main .deck .card .title .name {
+    font-family: 'Spectral-ExtraBold';
+    text-transform: uppercase;
+    font-size: 97%;
+    white-space: nowrap
+}
+
+main .deck .card .title .epithet {
+    font-family: 'Spectral-ExtraBold';
+    text-transform: uppercase;
+    font-size: 80%;
+    white-space: nowrap
+}
+
+main .deck .card .level {
+    margin-top: 2px;
+    margin-right: 6px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0px 4px;
+    width: 100%;
+}
+
+main .deck .card .level .stars {
+    width: 7%;
+    aspect-ratio: 1;
+}
+
+main .deck .card .character {
+    margin-top: 2px;
+    width: 99%;
+    aspect-ratio: 1;
+}
+
+main .deck .card .detail {
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    margin-top: 6px;
+    height: 100%;
+    font-size: clamp(15px, 3vmin, 19px);
+    border-radius: 8px;
+    gap: 8%;
+    padding: 2%;
+    overflow: hidden;
+}
+
+main .deck .card .detail .description {
+    font-family: 'Spectral-Bold';
+    text-align: start;
+    line-height: 1.1;
+    font-size: 85%;
+    border-bottom: 2px solid #64492e;
+    overflow-y: auto;
+    position: relative;
+    height: 82%;
+}
+
+main .deck .card .detail .attributes {
+    font-size: clamp(15px, 3vmin, 19px);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 6%;
+    padding: 3%;
+    height: 22%;
+}
+
+main .deck .card .detail .attributes span {
+    font-family: 'Spectral-ExtraBold';
+    font-size: 92%;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a38646;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c08057;
+}
+
+main .deck .background-1{
+    background: url(../images/card-backgrounds/01-cosmos-sentinel.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .deck .background-2{
+    background: url(../images/card-backgrounds/02-nebula-dragon.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .deck .background-3{
+    background: url(../images/card-backgrounds/03-cyber-blade-paladin.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .deck .background-4{
+    background: url(../images/card-backgrounds/04-mecha-dragon.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .deck .background-5{
+    background: url(../images/card-backgrounds/05-archmage-stellarion.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .deck .background-6{
+    background: url(../images/card-backgrounds/06-aegis-knight.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .deck .background-7{
+    background: url(../images/card-backgrounds/07-storm-bringer-dragon.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}

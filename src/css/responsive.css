@@ -1,33 +1,92 @@
-@media(max-width: 700px){
-    .slider{
-        gap: 6vw;
-    }
-}
-@media(max-width: 500px){
-    .cabecalho{
-        font-size: 16px;
-    }
-    .slider{
+@media(max-width: 430px) {
+
+    main .deck {
         position: relative;
+        bottom: 40px;
     }
-    .btn_seta{
-        position: absolute;
-        bottom: -18%;
+
+    main .buttons {
+        position: relative;
+        top: 190px;
     }
-    #btn_avancar{
-        right: 18%;
+
+    main .buttons.left {
+        position: relative;
+        left: 100px;
     }
-    #btn_voltar{
-        left: 18%;
-    }
-}
-@media(max-height: 850px){
-    body{
-        justify-content: start;
-        padding-top: 18px;
-        background-repeat: repeat;
-    }
-    .cabecalho{
-        font-size: 16px;
+
+    main .buttons.right {
+        position: relative;
+        right: 100px;
     }
 }
+
+@media(max-height: 680px) {
+
+    body {
+        overflow: auto;
+    }
+
+    header {
+        height: 12vh;
+    }
+
+    main {
+        height: 88vh;
+    }
+    
+}
+
+@media (max-height: 560px) {
+    body {
+        overflow: auto;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        height: 100%;
+        overflow-y: auto;
+        overflow-x:hidden;
+    }
+}
+
+
+/*@media (max-height: 530px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        height: 100%;
+        overflow-y: auto;
+        overflow-x:hidden;
+    }
+
+    main .deck {
+        bottom: 10px;
+    }
+
+    main .buttons {
+        position: relative;
+        top: 204px;
+    }
+
+    main .buttons.left {
+        position: relative;
+        left: 100px;
+    }
+
+    main .buttons.right {
+        position: relative;
+        right: 100px;
+    }
+    
+}*/
