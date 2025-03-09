@@ -1,0 +1,33 @@
+@media(max-width: 700px){
+    .slider{
+        gap: 6vw;
+    }
+}
+@media(max-width: 500px){
+    .cabecalho{
+        font-size: 16px;
+    }
+    .slider{
+        position: relative;
+    }
+    .btn_seta{
+        position: absolute;
+        bottom: -18%;
+    }
+    #btn_avancar{
+        right: 18%;
+    }
+    #btn_voltar{
+        left: 18%;
+    }
+}
+@media(max-height: 850px){
+    body{
+        justify-content: start;
+        padding-top: 18px;
+        background-repeat: repeat;
+    }
+    .cabecalho{
+        font-size: 16px;
+    }
+}

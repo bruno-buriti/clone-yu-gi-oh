@@ -1,0 +1,179 @@
+body{
+    font-family: 'Yugioh', serif;
+    background-image: url(../images/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.cabecalho{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.cabecalho .titulo{
+    color: #f0f0f0;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.lista_personagens{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    padding: 12px;
+}
+.cartao{
+    opacity: 0;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 2px;
+}
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+.cartao .nome{
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #a67c52;
+    padding: 6px;
+    border-radius: 6px;
+    line-height: 1.1;
+}
+.cartao .nivel_carta{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    padding-right: 6px;
+    gap: 4px;
+}
+.cartao .estrela{
+    background-image: url(../images/nivel-carta.png);
+    display: inline-block;
+    height: 20px;
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cartao .imagem_carta{
+    padding: 2px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.cartao .informacoes{
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    font-size: 14px;
+    border: 2px solid #a67c52;
+    border-radius: 6px;
+    padding: 4px;
+    line-height: 1.1;
+    text-align: left;
+}
+.cartao .informacoes .descricao{
+    padding: 4px;
+    border-bottom: 2px solid #64492e;
+    max-height: 100px;
+    overflow-y: scroll;
+    font-size: 14px
+}
+.cartao .informacoes .informacoes_ataque{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    padding-top: 8px;
+    padding-right: 6px;
+    font-size: 14px;
+}
+.fundo_1{
+    background: url(../images/fundo-1.jpg) no-repeat;
+}
+.fundo_2{
+    background: url(../images/fundo-2.jpg) no-repeat;
+}
+.fundo_3{
+    background: url(../images/fundo-3.jpg) no-repeat;
+}
+.fundo_4{
+    background: url(../images/fundo-4.jpg) no-repeat;
+}
+.fundo_5{
+    background: url(../images/fundo-5.jpg) no-repeat;
+}
+.fundo_6{
+    background: url(../images/fundo-6.jpg) no-repeat;
+}
+.fundo_7{
+    background: url(../images/fundo-7.jpg) no-repeat;
+}
+.btn_seta{
+    background-color: rgb(235, 235, 235);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btn_seta:hover{
+    background-color: #eeab81;
+}
+.btn_seta.btn_voltar{
+    transform: rotate(180deg);
+}
+body::-webkit-scrollbar-track{
+    background-color: #c08057;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #c08057;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c08057;
+}
+.carta_virada{
+    display: none;
+}
+.carta_virada.mostrar_fundo_carta{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/fundo-carta.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+.cartao.virar{
+    transform: rotateZ(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+.esconder{
+    display: none;
+}
